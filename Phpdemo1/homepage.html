@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<title>SrinidhiKrishnan</title>
+        <link rel="stylesheet" type="text/css" href="frontpage.css">
+	<link rel="stylesheet" type="text/css" href="registration.css">
+</head>
+
+<body>
+<div>
+<nav class="nb"><label>Srinidhi-Krishnan</label></nav>
+</div>
+<br>
+<div class="intro">
+	<table>
+    	<tr>
+        	<td><img src="srinidhi.jpg" width="240"></td>
+                <td>      <td>
+        	<td style="font-size:30px">A perseverant and inquisitive person thriving to be a part of this technological world.</td>
+        </tr>
+	</table>
+</div>
+<br>
+<br>
+ 
+<button type="button" class="collapsible">Personal details</button>
+<div class="content">
+
+<table id="table">
+	<tr>
+		<td><b>Name</b></td>
+		<td>K.Srinidhi</td>
+	</tr>
+	<tr>
+		<td><b>Major</b></td>
+		<td>Electronics and instrumentation engineering</td>
+	</tr>
+	<tr>
+		<td><b>Batch</b></td>
+		<td>2017-2021</td>
+
+	</tr>
+	<tr>
+		<td><b>Mother's name</b></td>
+		<td>K.Rajarajeswari</td>
+	</tr>
+	<tr>
+		<td><b>Occupation</b></td>
+		<td>Home maker</td>
+	</tr>
+	<tr>
+		<td><b>Father's name</b></td>
+		<td>C.Krishnan</td>
+	</tr>
+	<tr>
+		<td><b>Occupation</b></td>
+		<td>Project director at Larsen and Toubro Pvt. Limited.</td>
+	</tr>
+	<tr>
+		<td><b>Sibling</b></td>
+		<td>K.Seetha lekshmi</td>
+	</tr>
+	<tr>
+		<td><b>Occupation</b></td>
+		<td>Associate consultant at Wipro Pvt. Limited.</td>
+	</tr>
+</table>
+</div>
+
+
+<button type="button" class="collapsible">Academics and achievements</button>
+<div class="content">
+  <h2>Education</h2>
+<div class="table">
+<table id="table">
+    <tr>
+      <th>Education</th>
+      <th>Grading system</th>
+      <th>Total</th>
+      <th>Accured</th>
+    </tr>
+    <tr>
+      <td>B.E</td>
+      <td>CGPA</td>
+      <td>10</td>
+      <td>8.93</td>
+    </tr>
+    <tr>
+      <td>12<sup>th</sup></td>
+      <td>percentage</td>
+      <td>100</td>
+      <td>85.4</td>
+    </tr>
+    <tr>
+      <td>10<sup>th</sup></td>
+      <td>percentage</td>
+      <td>100</td>
+      <td>97.2</td>
+    </tr>
+  </table>
+  <br>
+</div>
+</div>
+
+<button type="button" class="collapsible">Skills and Interests</button>
+<div class="content">
+  <h2>Area of interest</h2>
+  <ul>
+    <li>Python programming</li>
+    <li>Data science</li>
+    <li>Web page development</l1>
+  </ul>
+  <h2>Skills</h2>
+  <ul>
+     <li>C programming language</li>
+    <li>Python programming language</li>
+    <li>Java programming language</li>
+    <li>Basics of data science</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+    <li>SQL</li>
+  </ul>
+</div>
+
+<button type="button" class="collapsible">Projects</button>
+<div class="content">
+<ul>
+	<li>Automatics gas leakage detection using IoT-2017</li>
+	<li>Smart bin-2019</li>
+	<li>e-portfolio</li>
+</ul>
+</div>
+<button type="button" class="collapsible">Certifications</button>
+<div class="content">
+<ul>
+	<li>Data science.</li>
+	<li>Plots(graphics) for datascience.</li>
+	<li>Predicting sales revenue by linear regression using numpy and pandas.</li>
+	<li>Fundamentals of HTML,CSS and Java script.
+	<li>Data structures and algorithms</li>
+	<li>Introduction to IoT</li>
+	<li>Basics of SQL in Skillrack</li>
+	<li>Business English Communication(BEC) Vantage level certification</li>
+</ul>
+<input type="button" value="click here to view certificates" onclick="window.location.href='certificate.html';">
+<br>
+<br>
+</div>
+<button type="button" class="collapsible">contacts</button>
+<div class="content">
+	<p><b>g-mail	</b>srin17220.ei@rmkec.ac.in</p>
+	<p><b>github	</b><a href="https://github.com/srinidhiKrishnan-17/">https://github.com/srinidhiKrishnan-17/</a></p>
+	<p><b>Linkedin  </b><a href="https://www.linkedin.com/in/srinidhi-k-711280179/">linkedin.com/in/srinidhi-k-711280179</a></p>
+	<p><b>phone number	</b>7598672143</p>
+	<p><b>whatsapp number	</b>8248041948</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+</body>
+
+</html>

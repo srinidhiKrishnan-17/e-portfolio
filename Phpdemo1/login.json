@@ -1,0 +1,68 @@
+{
+    "particles":{
+        "number":{
+            "value":50
+        },
+        "color":{
+            "value":"#804716"
+        },
+        "shape":{
+            "type":"image",
+            "image":{
+                "src":"login.png"
+            },
+            "type":"circle",
+            "stroke":{
+                "width":1,
+                "color":"#ccc"
+            }
+        },
+        "opacity":{
+            "value":1,
+            "random":true,
+            "anim":{
+                "enable":false,
+                "speed":0.3
+            }
+        },
+        "size": {
+            "value": 20,
+            "random": false,
+            "anim":{
+                "enable": false,
+                "speed": 3
+            }
+        },
+        "line_linked":{
+            "enable":true,
+            "distance":150,
+            "color":"#5B330F",
+            "width":1
+        },
+        "move":{
+            "enable":true,
+            "speed":8,
+            "direction":"none",
+            "straight":false
+        }
+         
+    },
+    "interactivity":{
+        "events":{
+            "onhover":{
+                "enable":true,
+                "mode":"repulse"
+            },
+            "onclick":{
+                "enable":true,
+                "mode":"push"
+            },
+            "modes":{
+                "repulse":{
+                    "distance":1,
+                    "duration":0.4
+                }
+            }
+        }
+    }
+}

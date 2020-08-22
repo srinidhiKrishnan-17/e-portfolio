@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="certificatesCSS">
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>CERTIFICATIONS</h1>
+<hr>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Academics')"> Academics</button>
+  <button class="btn" onclick="filterSelection('Online certifications')"> Online certifications</button>
+  <button class="btn" onclick="filterSelection('Achievements')"> Achievements</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="gallery">
+<div class="row">
+  <div class="column Academics">
+    <div class="content">
+        <a href="sem1"><span class="close">x</span><img src="sem1" alt="sem1" style="width:100%"></a>
+      <h4>Semester 1</h4>
+    </div>
+  </div>
+  <div class="column Academics">
+    <div class="content">
+        <a href="sem2"><span class="close">x</span><img src="sem2" alt="sem2" style="width:100%"></a>
+      <h4>Semester 2</h4>
+    </div>
+  </div>
+  <div class="column Academics">
+    <div class="content">
+        <a class="hide" href="sem3"><span class="close">x</span><img src="sem3" alt="sem3" style="width:100%"></a>
+      <h4>Semester 3</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+      <div class="column Academics">
+      <div class="content">
+        <a href="sem4"><span class="close">x</span><img src="sem4" alt="sem4" style="width:100%"></a>
+        <h4>Semester 4</h4>
+      </div>
+  </div>
+  <div class="column Academics">
+    <div class="content">
+        <a href="sem5_1"><span class="close">x</span><img src="sem5_1" alt="sem5" style="width:100%"></a>
+        <h4>Semester 5</h4>
+    </div>
+  </div>
+ <!-- <div class="column Academics">
+    <div class="content">
+        <a href=""><span class="close">x</span><img src="" alt="HTML CSS JS" style="width:100%"></a>
+      <h4>Semester 6</h4>
+    </div>
+  </div>-->
+</div>
+
+<div class="row">
+  <div class="column Online certifications">
+    <div class="content">
+        <a href="html css js new"><span class="close">x</span><img src="html css js new" alt="HTML CSS JS" style="width:100%"></a>
+      <h4>Foundations of JavaScript HTML CSS</h4>
+    </div>
+  </div>
+ <!-- <div class="column Online certifications">
+    <div class="content">
+        <a href="sem3-big"><span class="close">x</span><img src="/w3images/people1.jpg" alt="Complete DataScience boot camp" style="width:100%"></a>
+      <h4>Complete DataScience boot camp</h4>
+    </div>
+  </div>-->
+  <div class="column Online certifications">
+    <div class="content">
+        <a href="graphics_for_datascience new"><span class="close">x</span><img src="graphics_for_datascience new" alt="Car" style="width:100%"></a>
+      <h4>Plots for DataScience</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column Online certifications">
+    <div class="content">
+        <a href="predict sales revenue new" ><span class="close">x</span><img src="predict sales revenue new" alt="Car" style="width:100%"></a>
+      <h4>Predict sales revenue using scikit-learn</h4>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+
+    <div class="column Achievements">
+    <div class="content">
+        <a href="ppt"><span class="close">x</span><img src="ppt" alt="Car" style="width:100%"></a>
+      <h4>Paper presentation at Dr.MGR University</h4>
+    </div>
+  </div>
+    <div class="column Achievements">
+    <div class="content">
+        <a href="science project"><span class="close">x</span><img src="science project" alt="Participation at Science project" style="width:100%"></a>
+      <h4>Participation at Science project</h4>
+    </div>
+  </div>
+    <div class="column Achievements">
+    <div class="content">
+        <a href="BEC"><span class="close">x</span><img src="BEC" alt="BEC" style="width:100%"></a>
+      <h4>Completion of BEC Vantage</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="column Achievements">
+    <div class="content">
+        <a href="ball badminton"><span class="close">x</span><img src="ball badminton" alt="ball badminton" style="width:100%"></a>
+      <h4>Runner at inter department Ball badminton</h4>
+    </div>
+    </div>
+</div>
+   <!-- <span class="close">&times;</span>-->
+<!-- END GRID -->
+</div>
+<!-- END MAIN -->
+</div>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+</script>
+
+</body> 
+</html>
